@@ -1,5 +1,6 @@
 import 'package:destini_challenge_starting/story_brain.dart';
 import 'package:flutter/material.dart';
+
 void main() => runApp(Destini());
 
 class Destini extends StatelessWidget {
@@ -22,11 +23,10 @@ class _StoryPageState extends State<StoryPage> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('../images/background.png'),
-            fit: BoxFit.cover,
-          )
-        ),
+            image: DecorationImage(
+          image: AssetImage('../images/background.png'),
+          fit: BoxFit.cover,
+        )),
         padding: EdgeInsets.symmetric(vertical: 50.0, horizontal: 15.0),
         constraints: BoxConstraints.expand(),
         child: SafeArea(
